@@ -1,0 +1,40 @@
+{
+    "faqs":[
+        {
+            "title": "Will I be able to get food and drink at the show?",
+            "content": "We are working to provide a fantastic selection of food at the show. We’ll be providing a wide selection of food for all tastes."
+        },
+        {
+            "title": "Is the event Covid secure?",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptatum sunt distinctio rerum numquam? Sint beatae error adipisci architecto quas voluptates dolores, quia perspiciatis voluptatum eveniet necessitatibus ratione ducimus minus ipsam ab ex reiciendis velit laudantium quae harum dignissimos veniam, molestiae iusto quo? Quisquam quibusdam labore ratione officiis itaque voluptatum."
+        },
+        {
+            "title": "Do you have electric car charging points on-site?",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ea accusamus saepe animi possimus impedit culpa in officia? Veniam, aliquid?"
+        },
+        {
+            "title": "Is there parking on-site?",
+            "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, et?"
+        },
+        {
+            "title": "Can I buy tickets on the day?",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum itaque ratione autem reiciendis, sunt architecto recusandae magni culpa dicta quod. Ad libero excepturi ipsa nihil!"
+        },
+        {
+            "title": "How will I receive my ticket?",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias corrupti pariatur?"
+        },
+        {
+            "title": "Where is the event held?",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore debitis temporibus non voluptatem numquam ad, minus aliquam eligendi asperiores alias doloribus vero in natus quis at blanditiis aspernatur unde neque possimus quaerat. Doloremque cumque fugiat expedita impedit iure odio iste accusantium incidunt quo ullam saepe accusamus quae culpa perspiciatis earum tempore beatae ab, ad, illum itaque labore perferendis suscipit quam nisi! Accusantium dolore accusamus maiores molestias cum enim. Sit laborum, incidunt eos quos amet aliquam dolorem dolorum error blanditiis quasi expedita porro numquam libero labore ipsam dolores facilis? Rem nemo eveniet possimus accusantium facere voluptatum dolorem veritatis quod totam odio."
+        },
+        {
+            "title": "Are the tickets per car or person?",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rem, libero recusandae dolorum, cum id aut iusto, facilis animi odit culpa. Quae neque a doloribus eum corrupti voluptates alias repudiandae odit minus voluptate fugit ab, earum natus optio molestias exercitationem perspiciatis. Eveniet distinctio fugit fuga, tenetur voluptatum, dolore dolor consectetur odio illo veniam voluptas consequuntur aspernatur sapiente soluta molestiae voluptate ea eius, magnam sit autem. Fuga odio molestias eligendi, modi ipsa libero corporis non rerum."
+        },
+        {
+            "title": "Do kids go for free?",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nihil corporis obcaecati similique iste harum iure aperiam cupiditate, perferendis nesciunt consequatur omnis. Natus eos id delectus labore corrupti eveniet veniam!"
+        }
+    ]
+}

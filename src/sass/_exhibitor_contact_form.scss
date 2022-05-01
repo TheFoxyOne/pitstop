@@ -1,0 +1,138 @@
+// MOBILE FIRST
+.exhibitor{
+    @include flexCenter(column);
+    justify-content: start;
+    min-height: 30rem;
+    padding: 2rem 3rem;
+    background-color: $contactFormBackgroundColor;
+    .exhibitor_title{
+        @include styleTitle;
+    }
+    .exhibitor_contact_form{
+        @include flexCenter(column);
+        width: 100%;
+        height: 100%;
+        margin: 3rem;
+        .form_container{
+            @include flexCenter(column-reverse);
+            width: 100%;
+            height: 100%;
+            .form_column_a,
+            .form_column_b{
+                @include flexCenter(column);
+                align-items: flex-start;
+                width: 100%;
+                font-family: 'Arial Narrow', Arial, sans-serif;
+                font-weight: normal;
+                .form_row{
+                    @include flexCenter(row);
+                    justify-content: space-between;
+                    width: 100%;
+                    gap: 1rem;
+                    .form_column{
+                        @include flexCenter(column);
+                        align-items: flex-start;
+                        width: 50%;
+                        input{
+                            width: 98%;
+                            height: 2rem;
+                            border: none;
+                        }
+                    }
+                }
+                label{
+                    margin: 1.5rem 0 0.5rem 0;
+                    border: none;
+                    border-radius: 0px;
+                }
+                input{
+                    width: 99%;
+                    height: 2rem;
+                    border: none;
+                }
+                textarea{
+                    width: 99%;
+                    height: 4rem;
+                    border: none;
+                }
+                .upload_description{
+                    margin: 2rem 0 0.5rem 0;
+                    span{
+                        color: $primaryColor;
+                    }
+                }
+                h5{
+                    margin: 0;
+                }
+                .row{
+                    @include flexCenter(row);
+                    justify-content: start;
+                    width: 100%;
+                    gap: 2rem;
+                    margin: 0.5rem 0;
+                }
+                .button_row{
+                    @include flexCenter(row);
+                    justify-content: start;
+                    width: 100%;
+                    gap: 0.5rem;
+                    flex-wrap: wrap;
+                    label{
+                        cursor: pointer;
+                        padding: 0.5rem 0.75rem;
+                        background-color: $uploadButtonColor;
+                        color: $textSecondaryColor;
+                        font-family: 'Arial Narrow', Arial, sans-serif;
+                        font-weight: normal;
+                    }
+                    h5{
+                        width: 5rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+                .button_column{
+                    @include flexCenter(column);
+                    justify-content: start;
+                }
+            }
+        }
+        .submit_button{
+            width: 100%;
+            padding: 0.5rem 0;
+            margin: 2rem 0;
+            border: none;
+            border-radius: 0px;
+            background-color: $primaryColor;
+            color: $textSecondaryColor;
+            font-size: 1rem;
+            font-weight: lighter;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+}
+
+// ON BIG SCREEN
+@media screen and (min-width: 750px) {
+    .exhibitor{
+        padding: 2rem 8rem;
+        .exhibitor_contact_form{
+            .form_container{
+                @include flexCenter(row);
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 2.5rem;
+                .form_column_a,
+                .form_column_b{
+                    width: 50%;
+                    label{
+                        margin: 0.5rem 0 0.5rem 0;
+                    }
+                    .upload_description{
+                        margin: 3rem 0 0.5rem 0;
+                    }
+                }
+            }
+        }
+    }
+}

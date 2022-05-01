@@ -1,0 +1,195 @@
+// MOBILE FIRST
+.footer{
+    @include flexCenter(column);
+    justify-content: start;
+    min-height: 40rem;
+    //padding: 0 3rem;
+    background-color: $backgroundColor;
+    position: relative;
+    overflow: hidden;
+    .footer_left_triangle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15%;
+        z-index: 1;
+    }
+    .footer_right_triangle{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 27%;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 1;
+    }
+    .footer_faqs{
+        @include flexCenter(column);
+        padding: 2rem 3rem;
+        width: 85%;
+        z-index: 10;
+        .footer_faqs_title{
+            @include flexCenter(column);
+            width: min-content;
+            h1{
+                margin: 0;
+                font-size: 3.5rem;
+                font-weight: normal;
+            }
+            .title_line{
+                width: 5rem;
+                height: 0.40rem;
+                overflow: hidden;
+                svg{
+                    height: 1rem;
+                    .st0{
+                    }
+                }
+            }
+        }
+        .footer_faqs_collapse{
+            margin: 2.5rem 0;
+            width: 100%;
+            .footer_faqs_collapse_button {
+                @include flexCenter(row);
+                background-color: transparent;
+                color: $textPrimaryColor;
+                cursor: pointer;
+                padding: 1rem;
+                margin: 0.5rem 0;
+                width: 100%;
+                border: 1px solid $primaryColor;
+                text-align: center;
+                outline: none;
+                font-size: 1rem;
+                .button_text{
+                    width: 95%;
+                    margin-left: 32px;
+                }
+                svg{
+                    width: 1.75rem;
+                    height: 2rem;
+                }
+                .plus{
+                    @include flexCenter(row);
+                }
+                .minus{
+                    display: none;
+                }
+                &:hover{
+                    background-color: $primaryColor;
+                    transition: all 0.5s ease;
+                }
+            }
+            .active{
+                .plus{
+                    display: none;
+                }
+                .minus{
+                    @include flexCenter(row);
+                }
+            }
+            .footer_faqs_collapse_content {
+                width: 75%;
+                margin: 0 auto;
+                text-align: center;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                background-color: transparent;
+                font-family: 'Arial Narrow', Arial, sans-serif;
+            }
+        }
+    }
+
+    .footer_find_us{
+        @include flexCenter(column);
+        justify-content: start;
+        height: 40rem;
+        width: 85%;
+        z-index: 10;
+        .footer_find_us_title{
+            @include styleTitle;
+            width: fit-content;
+            h1{
+                width: fit-content;
+            }
+        }
+        .footer_find_us_address{
+            margin: 2rem 0;
+            text-align: center;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            p{
+                margin: 0;
+            }
+            a{
+                color: $textPrimaryColor;
+            }
+        }
+        .footer_find_us_map{
+            @include flexCenter(column);
+            width: 100%;
+            max-width: 700px;
+            .mapouter{
+                position: relative;
+                text-align: right;
+                height: 300px;
+                width: 100%;
+                max-width: 700px;
+                #gmap_canvas,
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 300px;
+                    width: 100%;
+                    max-width: 700px;
+                }
+            }
+            .footer_find_us_map_copyright{
+                @include flexCenter(row);
+                justify-content: space-between;
+                width: 98%;
+                margin: 2.5rem 0;
+                svg{
+                    width: 15rem;
+                }
+                .footer_find_us_map_social{
+                    @include flexCenter(row);
+                    .circle{
+                        @include flexCenter(row);
+                        width: 0.5rem;
+                        height: 0.5rem;
+                        border-radius: 50%;
+                        margin: 0 0.5rem;
+                        padding: 0.75rem;
+                        background-color: $textPrimaryColor;
+                        &:hover{
+                            background-color: $primaryColor;
+                            transition: all 0.25s ease;
+                        }
+                        i{
+                            font-size: 1.25rem;
+                            text-align: center;
+                            color: $textSecondaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// ON BIG SCREEN
+@media screen and (min-width: 750px) {
+    .footer{
+        .footer_faqs{
+            padding: 3rem 9rem;
+            width: 50%;
+        }
+        .footer_find_us{
+            width: 50%;
+        }
+        
+    }
+}

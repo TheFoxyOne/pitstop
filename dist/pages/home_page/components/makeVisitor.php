@@ -1,0 +1,6 @@
+<!-- FUNCTION FOR MAKING A VISITOR COMPONENT -->
+
+<?php
+
+
+?>

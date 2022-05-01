@@ -1,0 +1,65 @@
+// MOBILE FIRST
+.header{
+    @include flexCenter(column);
+    height: 13rem;
+    padding: 1rem 3rem;
+    background-color: $backgroundColor;
+    .header_logo{
+        @include flexCenter(row);
+        width: 100%;
+        svg{
+            width: 15rem;
+        }
+    }
+    .header_book{
+        @include flexCenter(column);
+        width: 100%;
+        h2{
+            @include flexCenter(column);
+            font-weight: normal;
+            font-size: 1.5rem;
+        }
+        span{
+            color: $primaryColor;
+        }
+        .book_your_tickets_now_svg{
+            width: 15rem;
+            svg{
+                width: 100%;
+            }
+        }
+    }
+}
+
+// ON BIG SCREEN
+@media screen and (min-width: 750px) {
+    .header{
+        height: 9rem;
+        padding: 1rem 8rem;
+        @include flexCenter(row);
+        justify-content: space-between;
+        .header_logo{
+            justify-content: start;
+            svg{
+                width: 100%;
+                max-width: 25rem;
+            }
+        }
+        .header_book{
+            align-items: flex-end;
+            h2{
+                flex-wrap: wrap;
+                @include flexCenter(row);
+                justify-content: end;
+                font-size: 2.1rem;
+                span{
+                    margin-left: 0.5rem;
+                }
+            }
+            .book_your_tickets_now_svg{
+                width: 90%;
+                max-width: 16rem;
+            }
+        }
+    }
+}

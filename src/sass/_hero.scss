@@ -1,0 +1,23 @@
+// MOBILE FIRST
+.hero{
+    @include flexCenter(column);
+    justify-content: end;
+    height: 35rem;
+    padding: 0 3rem;
+    background-image: url('../assets/v2_header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    h1{
+        text-align: center;
+        font-size: 5rem;
+        font-weight: normal;
+        span{
+            color: $primaryColor;
+        }
+    }
+}
+
+// ON BIG SCREEN
+@media screen and (min-width: 750px) {
+}

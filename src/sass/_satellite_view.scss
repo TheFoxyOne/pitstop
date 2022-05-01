@@ -1,0 +1,21 @@
+// MOBILE FIRST
+.satellite_view{
+    @include flexCenter(column);
+    height: 15rem;
+    padding: 0 3rem;
+    background-color: $satelliteBackgroundColor;
+    .satellite_view_title{
+        @include styleTitle;
+        text-align: center;
+        h1{
+            font-size: 4rem;
+        }
+    }
+}
+
+// ON BIG SCREEN
+@media screen and (min-width: 750px) {
+    .satellite_view{
+        padding: 2rem 8rem;
+    }
+}

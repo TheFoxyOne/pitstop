@@ -1,0 +1,63 @@
+// MOBILE FIRST
+.visitor{
+    @include flexCenter(column);
+    min-height: 30rem;
+    padding: 1rem 3rem;
+    background-color: $backgroundColor;
+    .visitor_container,
+    .exhibit_container{
+        @include styleTitle;
+        margin: 1.5rem 0;
+        h2{
+            margin: 0;
+            font-size: 3rem;
+            font-weight: normal;
+        }
+        h4{
+            margin: 1.5rem 0;
+            font-size: 1.25rem;
+            font-weight: normal;
+            color: $primaryColor;
+        }
+        p{
+            font-size: 1rem;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            font-weight: normal;
+        }
+        .button{
+            margin-top: 2rem;
+            width: fit-content;
+            svg{
+                width: 15rem;
+            }
+        }
+    }
+    .white_vertical_line{
+        display: none;
+    }
+}
+
+// ON BIG SCREEN
+@media screen and (min-width: 750px) {
+    .visitor{
+        @include flexCenter(row);
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem 8rem;
+        .visitor_container{
+            width: 40%;
+            margin: 0;
+        }
+        .exhibit_container{
+            width: 40%;
+            margin: 0;
+        }
+        .white_vertical_line{
+            display: block;
+            margin: 2rem 0 1.5rem 0;
+            width: 2px;
+            min-height: 27rem;
+            background-color: #ffffff;
+        }
+    }
+}
