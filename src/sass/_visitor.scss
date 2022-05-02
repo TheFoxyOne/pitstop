@@ -4,7 +4,7 @@
 // MOBILE FIRST
 .visitor{
     @include flexCenter(column);
-    min-height: 30rem;
+    min-height: 40rem;
     padding: 1rem 3rem;
     background-color: $backgroundColor;
     .visitor_container,
@@ -13,25 +13,25 @@
         margin: 1.5rem 0;
         h2{
             margin: 0;
-            font-size: 3rem;
+            font-size: 5rem;
             font-weight: normal;
         }
         h4{
-            margin: 1.5rem 0;
-            font-size: 1.25rem;
+            margin: 2.5rem 0;
+            font-size: 2rem;
             font-weight: normal;
             color: $primaryColor;
         }
         p{
-            font-size: 1rem;
-            font-family: 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.25rem;
+            font-family: 'Bellefair', serif;
             font-weight: normal;
         }
         .button{
             margin-top: 2rem;
             width: fit-content;
             svg{
-                width: 15rem;
+                width: 25rem;
             }
         }
     }
@@ -46,21 +46,39 @@
         @include flexCenter(row);
         justify-content: space-between;
         align-items: flex-start;
-        padding: 1rem 8rem;
+        padding: 2rem 12rem;
         .visitor_container{
-            width: 40%;
+            width: 45%;
             margin: 0;
         }
         .exhibit_container{
-            width: 40%;
+            width: 45%;
             margin: 0;
         }
         .white_vertical_line{
             display: block;
-            margin: 2rem 0 1.5rem 0;
+            //margin: 1rem 0 1.5rem 0;
             width: 2px;
-            min-height: 27rem;
+            min-height: 38rem;
             background-color: #ffffff;
         }
     }
+}
+
+@media screen and (max-width: 1350px) {
+    .visitor{
+        flex-wrap: wrap;
+        .visitor_container{
+            width: 100%;
+            margin: 0;
+        }
+        .exhibit_container{
+            width: 100%;
+            margin: 2rem 0;
+        }
+        .white_vertical_line{
+            display: none;
+        }
+    }
+    
 }

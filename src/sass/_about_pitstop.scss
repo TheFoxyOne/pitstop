@@ -14,29 +14,30 @@
     .about_pitstop_column_a{
         @include styleTitle;
         .title_line{
-            width: 15rem;
+            width: 19rem;
         }
-        padding: 3rem 3rem;
+        padding: 4rem 3rem;
         height: 50%;
         h1{
-            font-size: 4rem;
+            font-size: 5rem;
             font-weight: normal;
             margin: 0;
         }
         h3{
-            font-size: 1.5rem;
+            font-size: 2.2rem;
             font-weight: normal;
+            margin: 3rem 0;
         }
         p{
-            font-weight: lighter;
-            font-family: 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.2rem;
+            font-family: 'Bellefair', serif;
             span{
                 color: $primaryColor;
             }
         }
         .book_your_tickets_now_svg{
-            width: 15rem;
-            margin-top: 2rem;
+            width: 25rem;
+            margin-top: 4rem;
             svg{
                 width: 100%;
             }
@@ -76,19 +77,19 @@
     .about_pitstop{
         @include flexCenter(row);
         padding-bottom: 2rem;
-        min-height: 40rem;
-        max-height: 40rem;
-        height: 40rem;
+        min-height: 48rem;
+        max-height: fit-content;
         .about_pitstop_column_a{
             @include flexCenter(row);
             width: 50%;
             .about_pitstop_column_a_content{
-                width: 70%;
+                width: 60%;
             }
         }
         .about_pitstop_column_b{
+            align-self: flex-start;
             width: 50%;
-            height: 100%;
+            min-height: 48rem;
         }
     }
 }

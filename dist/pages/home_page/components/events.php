@@ -43,7 +43,7 @@
                     echo '
                     <div class="card filterDiv events_date_'.$index.' '.$isActive.'">
                         <div class="events_cards_image">
-                            <img src="'.$image.'" alt="">
+                            <img loading="lazy" src="'.$image.'" alt="">
                         </div>
                         <h3>'.$title.'</h3>
                         <p>'.$description.'</p>

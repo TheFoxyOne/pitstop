@@ -4,7 +4,7 @@
 // MOBILE FIRST
 .trader{
     @include flexCenter(row);
-    min-height: 30rem;
+    min-height: 45rem;
     padding: 2rem 3rem;
     background-image: url('../assets/blue_header.png');
     background-size: cover;
@@ -25,28 +25,30 @@
                 @include styleTitle;
             }
             h3{
-                font-size: 1.35rem;
+                font-size: 2.2rem;
                 font-weight: normal;
                 color: $primaryColor;
             }
             p{
+                font-size: 1.25rem;
                 font-weight: normal;
-                font-family: 'Arial Narrow', Arial, sans-serif;
+                font-family: 'Bellefair', serif;
             }
             h4{
-                font-size: 0.85rem;
+                font-size: 1.25rem;
                 font-weight: bold;
-                font-family: 'Arial Narrow', Arial, sans-serif;
+                font-family: 'Bellefair', serif;
             }
             .book_your_space_now_svg{
                 @include flexCenter(row);
                 position: relative;
-                max-width: 16rem;
+                max-width: 25rem;
                 width: 100%;
                 height: 3rem;
+                margin-top: 5rem;
                 svg{
                     position: absolute;
-                    max-width: 16rem;
+                    max-width: 25rem;
                     width: 100%;
                 }
                 h2{
@@ -66,6 +68,7 @@
             }
             h2{
                 margin: 0;
+                font-size: 2.3rem;
                 font-weight: normal;
                 width: fit-content;
             }
@@ -75,7 +78,7 @@
             .seperator_line{
                 width: 100%;
                 height: 1px;
-                margin: 1.5rem 0;
+                margin: 1.75rem 0;
                 background-color: $primaryColor;
             }
         }
@@ -85,14 +88,35 @@
 // ON BIG SCREEN
 @media screen and (min-width: 750px) {
     .trader{
-        padding: 2rem 8rem;
+        padding: 2rem 12rem;
+        .trader_card{
+            @include flexCenter(column);
+            padding: 3rem;
+            .trader_card_column_a{
+                width: 100%;
+                margin: 1rem 0;
+                .book_your_space_now_svg{
+                    h2{
+                        font-size: clamp(1rem, 3vw, 3rem);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .trader{
+        padding: 2rem 12rem;
         .trader_card{
             @include flexCenter(row);
+            padding: 6rem;
             .trader_card_column_a{
                 width: 50%;
                 .book_your_space_now_svg{
                     h2{
-                        font-size: clamp(1rem, 3vw, 2rem);
+                        font-size: clamp(1rem, 3vw, 3rem);
                     }
                 }
             }

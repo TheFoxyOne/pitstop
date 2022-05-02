@@ -42,6 +42,7 @@
                 <div class="gmap_canvas">
                     <iframe width="700" height="300" id="gmap_canvas"
                         src="https://maps.google.com/maps?q=Park%20Hall%20Rd%20Charnock%20Richard&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        title="Our Location on Google Maps"
                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                     </iframe>
                 </div>
@@ -51,10 +52,10 @@
                 <?php echo file_get_contents($_SERVER['DOCUMENT_ROOT']."/dist/assets/powered_by_skinz.svg"); ?>
 
                 <div class="footer_find_us_map_social">
-                    <a href="<?php echo $data['footer_find_us_social_facebook_link'] ?>" class="button circle">
+                    <a href="<?php echo $data['footer_find_us_social_facebook_link'] ?>" aria-label="Facebook" class="button circle">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="<?php echo $data['footer_find_us_social_instagram_link'] ?>" class="button circle">
+                    <a href="<?php echo $data['footer_find_us_social_instagram_link'] ?>" aria-label="Instagram" class="button circle">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </div>
