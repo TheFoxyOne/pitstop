@@ -6,7 +6,7 @@
             <?php echo file_get_contents($_SERVER['DOCUMENT_ROOT']."/dist/assets/minus.svg"); ?>
         </div>
     </div>
-    <form class="trader_form_contact_form" action="/dist/submit_trader_form.php" method="post">
+    <form class="trader_form_contact_form" action="/dist/pages/submit_page/submit_trader.php" method="post">
         <div class="form_container">
             <div class="form_column_a">
                 <label for="companyName"><?php echo $data['trader_form_company_name'] ?></label>

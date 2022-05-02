@@ -6,7 +6,7 @@
             <?php echo file_get_contents($_SERVER['DOCUMENT_ROOT']."/dist/assets/minus.svg"); ?>
         </div>
     </div>
-    <form class="exhibitor_contact_form" action="/dist/submit_exhibitor.php" method="post">
+    <form class="exhibitor_contact_form" action="/dist/pages/submit_page/submit_exhibitor.php" method="post" enctype="multipart/form-data">
         <div class="form_container">
             <div class="form_column_a">
                 <label for="model"><?php echo $data['exhibitor_model'] ?></label>
@@ -22,7 +22,7 @@
                 <div class="row">
                     <div class="button_column">
                         <div class="button_row">
-                            <input class="upload_button" type="file" name="file1" id="file1" hidden />
+                            <input class="upload_button" type="file" name="file1" id="file1" hidden/>
                             <label class="button" for="file1"><?php echo $data['exhibitor_choose_file'] ?></label>
                             <h5 id="file1-chosen"><?php echo $data['exhibitor_no_file_chosen'] ?></h5>
                         </div>
