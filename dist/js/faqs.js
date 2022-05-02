@@ -1,0 +1,1 @@
+var i,collBtns=document.getElementsByClassName("footer_faqs_collapse_button");for(i=0;i<collBtns.length;i++)collBtns[i].addEventListener("click",function(){this.classList.toggle("active");var t=this.nextElementSibling;t.style.maxHeight?(t.style.maxHeight=null,t.style.margin="0 auto"):(t.style.maxHeight=t.scrollHeight+"px",t.style.margin="0 auto 5rem auto")});
