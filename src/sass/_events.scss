@@ -1,3 +1,6 @@
+// IMPORTS
+@use './index' as *;
+
 // MOBILE FIRST
 .events{
     @include flexCenter(column);

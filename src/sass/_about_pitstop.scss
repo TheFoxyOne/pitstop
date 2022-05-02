@@ -1,3 +1,6 @@
+// IMPORTS
+@use './index' as *;
+
 // MOBILE FIRST
 .about_pitstop{
     @include flexCenter(column);

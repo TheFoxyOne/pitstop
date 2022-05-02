@@ -1,0 +1,26 @@
+// IMPORTS
+@use './index' as *;
+@use './header';
+@use './hero';
+@use './about_pitstop';
+@use './events';
+@use './visitor';
+@use './exhibitor_contact_form';
+@use './trader';
+@use './trader_contact_form';
+@use './satellite_view';
+@use './footer';
+
+// Styles for the Submit Trader Page.
+
+.answer_container{
+    @include flexCenter(row);
+    height: 30rem;
+    background-image: url('../assets/v2_header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+}

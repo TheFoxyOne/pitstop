@@ -1,3 +1,6 @@
+// IMPORTS
+@use './index' as *;
+
 // MOBILE FIRST
 .satellite_view{
     @include flexCenter(column);

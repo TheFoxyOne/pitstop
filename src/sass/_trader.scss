@@ -1,3 +1,6 @@
+// IMPORTS
+@use './index' as *;
+
 // MOBILE FIRST
 .trader{
     @include flexCenter(row);
