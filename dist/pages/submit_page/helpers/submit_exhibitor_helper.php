@@ -6,11 +6,17 @@ use PHPMailer\PHPMailer\Exception;
 
 function sendEmail(){
 
+    // Upload File Error Message
+    $uploadFileErrorMessage = "Your uploaded file did not meet the requirements. Please try again.";
+
     // GET FORM DATA
     $model = $_POST["model"];
     $registration = $_POST["registration"];
     $type = $_POST["type"];
     $modifications = $_POST["modifications"];
+
+    $maxsize = 2 * 1024 * 1024; // 2 MB
+    $types = array('image/png', 'image/jpeg', 'image/jpg'); // allowed mime-types
 
     $file1 = $_FILES['file1']['tmp_name'];
     $file2 = $_FILES['file2']['tmp_name'];
@@ -21,6 +27,47 @@ function sendEmail(){
     $file3Name = $_FILES['file3']['name'];
     $file4Name = $_FILES['file4']['name'];
 
+    if($file1 != ""){
+        if(filesize($file1) < $maxsize && in_array(mime_content_type($file1),$types)){
+        }else{
+            echo '<script>
+                const h1 = document.getElementById("emailAnswer");
+                h1.innerText = "'.$uploadFileErrorMessage.'";
+                </script>';
+            exit;
+        }
+    }
+    if($file2 != ""){
+        if(filesize($file2) < $maxsize && in_array(mime_content_type($file2),$types)){
+        }else{
+            echo '<script>
+                const h1 = document.getElementById("emailAnswer");
+                h1.innerText = "'.$uploadFileErrorMessage.'";
+                </script>';
+            exit;
+        }
+    }
+    if($file3 != ""){
+        if(filesize($file3) < $maxsize && in_array(mime_content_type($file3),$types)){
+        }else{
+            echo '<script>
+                const h1 = document.getElementById("emailAnswer");
+                h1.innerText = "'.$uploadFileErrorMessage.'";
+                </script>';
+            exit;
+        }
+    }
+    if($file4 != ""){
+        if(filesize($file4) < $maxsize && in_array(mime_content_type($file4),$types)){
+        }else{
+            echo '<script>
+                const h1 = document.getElementById("emailAnswer");
+                h1.innerText = "'.$uploadFileErrorMessage.'";
+                </script>';
+            exit;
+        }
+    }
+    
     $firstName = $_POST["firstName"];
     $lastName = $_POST["lastName"];
     $email = $_POST["email"];
@@ -122,14 +169,12 @@ function sendEmail(){
     if (!$mail->send()) {
         echo '<script>
             const h1 = document.getElementById("emailAnswer");
-            console.log(h1);
             h1.innerText = "'.$failedMessage.'";
             </script>';
         ;
     } else {
         echo '<script>
             const h1 = document.getElementById("emailAnswer");
-            console.log(h1);
             h1.innerText = "'.$successMessage.'";
             </script>';
     }
