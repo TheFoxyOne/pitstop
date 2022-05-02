@@ -1,0 +1,46 @@
+/* GLOBAL IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+/* RESET */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "League Gothic", sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 0px;
+}
+
+h1 {
+  margin: 0.5rem 0;
+}
+
+h2 {
+  margin: 0.5rem 0;
+}
+
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "League Gothic", sans-serif;
+  font-weight: normal;
+}
+.button:hover {
+  transform: scale(1.075);
+  filter: brightness(1.2);
+  transition: all 0.25s ease;
+}

@@ -13,7 +13,7 @@
     background-position: top;
     h1{
         text-align: center;
-        font-size: 7.4rem;
+        font-size: clamp(5rem, 15vw, 7.4rem);
         font-weight: normal;
         span{
             color: $primaryColor;

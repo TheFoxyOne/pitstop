@@ -4,7 +4,7 @@
 // MOBILE FIRST
 .satellite_view{
     @include flexCenter(column);
-    height: 25.25rem;
+    min-height: 25.25rem;
     padding: 0 3rem;
     background-color: $satelliteBackgroundColor;
     .satellite_view_title{
