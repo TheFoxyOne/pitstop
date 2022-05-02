@@ -4,8 +4,8 @@
 
 This is a project made as a second task for the Web Developer position.
 
-In order to access the website use the **/dist/** directory which was build for production.
-The **/scr/** directory was used for development.
+> In order to access the website use the **/dist/** directory which was build for production.
+> The **/scr/** directory was used for development.
 
 **Technologies Used:**
 
