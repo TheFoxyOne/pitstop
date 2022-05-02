@@ -19,6 +19,8 @@
     
     <?php include $_SERVER['DOCUMENT_ROOT'].'/dist/pages/home_page/components/footer.php'; ?>
     
+    <!-- LOAD SCRIPTS -->
+    <script src="../../js/faqs.js"></script>
 </body>
 
 </html>

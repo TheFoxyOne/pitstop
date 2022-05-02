@@ -15,6 +15,7 @@
 
     <!-- LOAD SCRIPTS -->
     <script src="./js/filter.js"></script>
+    <script src="./js/faqs.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
