@@ -126,7 +126,7 @@ function sendEmail(){
     $text_body .= "Pit Stop Team";
     
     // My SMTP Configuration
-    $to = 't0ny@hotmail.gr';
+    $to = 'imran@oneagencymedia.uk';
     $username = 'devpapasant@gmail.com';
     $password = 'TVPRDBnSr73LW9Xq';
     $host = "smtp-relay.sendinblue.com";
@@ -180,5 +180,5 @@ function sendEmail(){
     }
 }
 
-//sendEmail();
+sendEmail();
 ?>
