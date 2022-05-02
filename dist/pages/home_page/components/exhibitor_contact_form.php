@@ -22,14 +22,14 @@
                 <div class="row">
                     <div class="button_column">
                         <div class="button_row">
-                            <input class="upload_button" type="file" name="file1" id="file1" hidden/>
+                            <input class="upload_button" type="file" name="file1" id="file1" accept=".png, .jpg, .jpeg" hidden/>
                             <label class="button" for="file1"><?php echo $data['exhibitor_choose_file'] ?></label>
                             <h5 id="file1-chosen"><?php echo $data['exhibitor_no_file_chosen'] ?></h5>
                         </div>
                     </div>
                     <div class="button_column">
                         <div class="button_row">
-                            <input class="upload_button" type="file" name="file2" id="file2" hidden />
+                            <input class="upload_button" type="file" name="file2" id="file2" accept=".png, .jpg, .jpeg" hidden />
                             <label class="button" for="file2"><?php echo $data['exhibitor_choose_file'] ?></label>
                             <h5 id="file2-chosen"><?php echo $data['exhibitor_no_file_chosen'] ?></h5>
                         </div>
@@ -38,14 +38,14 @@
                 <div class="row">
                     <div class="button_column">
                         <div class="button_row">
-                            <input class="upload_button" type="file" name="file3" id="file3" hidden />
+                            <input class="upload_button" type="file" name="file3" id="file3" accept=".png, .jpg, .jpeg" hidden />
                             <label class="button" for="file3"><?php echo $data['exhibitor_choose_file'] ?></label>
                             <h5 id="file3-chosen"><?php echo $data['exhibitor_no_file_chosen'] ?></h5>
                         </div>
                     </div>
                     <div class="button_column">
                         <div class="button_row">
-                            <input class="upload_button" type="file" name="file4" id="file4" hidden />
+                            <input class="upload_button" type="file" name="file4" id="file4" accept=".png, .jpg, .jpeg" hidden />
                             <label class="button" for="file4"><?php echo $data['exhibitor_choose_file'] ?></label>
                             <h5 id="file4-chosen"><?php echo $data['exhibitor_no_file_chosen'] ?></h5>
                         </div>
