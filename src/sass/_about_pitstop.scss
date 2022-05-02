@@ -18,7 +18,7 @@
         .title_line{
             width: 19rem;
         }
-        padding: 4rem 3rem;
+        padding: 4rem 0;
         height: 50%;
         h1{
             font-size: clamp(0.1rem, 10vw, 5rem);
@@ -83,6 +83,7 @@
         max-height: fit-content;
         .about_pitstop_column_a{
             @include flexCenter(row);
+            padding: 4rem 3rem;
             width: 50%;
             .book_your_tickets_now_svg{
                 width: clamp(10rem , 30vw, 25rem);
